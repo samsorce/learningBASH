@@ -49,7 +49,8 @@ $ tmp=$(echo ${tmp} | sed 's/\ /|/g')
 
 
 test.sh
-    tmp='^(%|builtin|dirs|for|local|\(\(|logout)$'  # parentheses need to be escaped
+   # tmp='^(%|builtin|dirs|for|local|\(\(|logout)$'  # parentheses need to be escaped
+    tmp='^(:|%|builtin|dirs|for|local|\(\(|logout|\{|\[\[)$'
 
     if [[ $1 =~ ${tmp} ]]; then
 	    echo "iskeyword : TRUE"
