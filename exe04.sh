@@ -11,6 +11,8 @@ isidentifier='^(%|builtin|dirs|for|local|select|type|\(\(|caller|disown|for|logo
 islower='^[a-z]*$'
 isupper='^[A-Z]*$'
 istitle='^[A-Z][a-z]*$'
+isspace='^\ $'
+isprintable='^[a-zA-Z1-9]|\.|;|=|!|%|\$|#$'
 
 echo -n "é alphanumerico : "; [[ ${dado} =~ ${isalpha} ]]      && echo "TRUE" || echo "FALSE"
 echo -n "é decima        : "; [[ ${dado} =~ ${isdecimal} ]]    && echo "TRUE" || echo "FALSE"
@@ -19,3 +21,6 @@ echo -n "é indentificador: "; [[ ${dado} =~ ${isidentifier} ]] && echo "TRUE" |
 echo -n "é lowercase     : "; [[ ${dado} =~ ${islower} ]]      && echo "TRUE" || echo "FALSE"
 echo -n "é uppercase     : "; [[ ${dado} =~ ${isupper} ]]      && echo "TRUE" || echo "FALSE"
 echo -n "é title         : "; [[ ${dado} =~ ${istitle} ]]      && echo "TRUE" || echo "FALSE"
+echo -n "é espaço        : "; [[ ${dado} =~ ${isspace} ]]      && echo "TRUE" || echo "FALSE"
+echo -n "é imprimivel    : "; [[ ${dado} =~ ${isprintable} ]]  && echo "TRUE" || echo "FALSE"
+
