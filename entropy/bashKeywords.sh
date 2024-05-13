@@ -58,4 +58,5 @@ test.sh
 	    echo "isKeyword : FLASE"
     fi
 
+isidentifier='^(%|builtin|dirs|for|local|select|type|\(\(|caller|disown|for|logout|set|typeset|\.|case|echo|function|mapfile|shift|ulimit|:|cd|enable|getopts|popd|shopt|umask|\[|command|eval|hash|printf|source|unalias|\[\[|compgen|exec|help|pushd|suspend|unset|\{||complete|exit|history|pwd|test|until|alias|compopt|export|if|read|time|variables|bg|continue|false|jobs|readarray|times|wait|bind|coproc|fc|kill|readonly|trap|while|break|declare|fg|let|return|true)$'
 
